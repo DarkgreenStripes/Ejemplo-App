@@ -58,8 +58,9 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    flexDirection: 'column', //Canvi de 'row' a 'column'
+    justifyContent: 'center', 
+    flexDirection: 'row',
+    backgroundColor: '#478acd', //Fons nou
   },
   safeArea: {
     flex: 1,
@@ -78,16 +79,16 @@ const styles = StyleSheet.create({
   },
   title: {
     textAlign: 'center',
+    fontSize: 80, //Canvi tamany de font
   },
   code: {
     textTransform: 'uppercase',
   },
   stepContainer: {
     gap: Spacing.three,
-    alignSelf: 'stretch',
+    alignSelf: 'flex-start', //Abans era 'stretch'
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.four,
     borderRadius: Spacing.four,
-    backgroundColor: '#004586', // Fondo de los pasos
   },
 });
